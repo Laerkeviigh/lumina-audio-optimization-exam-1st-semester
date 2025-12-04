@@ -499,7 +499,7 @@ body {
 
 .app-showcase {
   position: relative;
-  padding: 120px 0 140px;
+  padding: 160px 0 170px;
   overflow: visible;
   background: transparent;
 }
@@ -507,7 +507,7 @@ body {
 /* Dekorative baggrundscirkler fra Figma */
 .showcase-bg-elements {
   position: absolute;
-  top: 20px;
+  top: 70px;
   left: 50%;
   transform: translateX(-50%);
   width: 1800px;
@@ -587,3 +587,96 @@ body {
 
 
 
+/* STORYCASE SECTION */
+
+
+
+.storycase {
+  padding: 200px 0 140px;
+}
+
+/* Indre grid: tekst | billede */
+.storycase-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 520px;
+  gap: 60px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Tekstfelt */
+.storycase-text {
+  max-width: 780px;
+}
+
+/* Titel */
+.storycase-title {
+  font-size: 48px;
+  line-height: 1;
+  font-weight: var(--medium);
+  color: var(--almost-black);
+  margin-bottom: 24px;
+}
+
+/* Kort intro/afsnit */
+.storycase-sub {
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: var(--regular);
+  color: var(--almost-black);
+  margin-bottom: 18px;
+}
+
+/* Bullet-liste */
+.storycase-list {
+  list-style: none;
+  margin: 28px 0 0;
+  padding: 0;
+  display: block;
+}
+
+.storycase-list li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--almost-black);
+  margin-bottom: 12px;
+  font-weight: var(--regular); 
+}
+
+/* kun det første ord */
+.storycase-list strong {
+  font-weight: var(--semibold);
+  margin-right: 2px;
+  color: var(--almost-black);
+}
+
+/* Højre side med billede */
+.storycase-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.storycase-img {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  border-radius: 30px;                
+  object-fit: cover;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+  display: block;
+}
+
+/* Divider-linje */
+.storycase-divider {
+  width: 220px;
+  height: 6px;
+  background: var(--pink-light);
+  margin: 100px auto;
+  border-radius: 4px;
+  opacity: 0.9;
+;
+}
