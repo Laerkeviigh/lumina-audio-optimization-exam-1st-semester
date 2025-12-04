@@ -273,3 +273,91 @@ body {
 /* USP SECTION */
 
 
+.usp-section {
+  background: transparent;
+  margin-top: 140px;
+  padding: 80px 0 100px;
+  position: relative;
+  z-index: 5; 
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Header - titel til venstre, kort tekst til højre */
+.usp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 48px;
+  z-index: 6;
+}
+
+.usp-title {
+  font-size: 48px;               
+  font-weight: var(--medium);
+  margin: 0;
+  color: var(--almost-black);
+}
+
+.usp-sub {
+  max-width: 800px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: var(--regular);
+  color: var(--almost-black);
+}
+
+/* Grid med 5 kolonner */
+.usp-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 32px;
+  align-items: start;
+}
+
+/* Kort */
+.usp-card {
+  text-align: center;
+  padding: 6px 12px 20px;
+  background: transparent;
+  position: relative;
+}
+
+/* Ikoner */
+.usp-icon {
+  width: 86px;
+  height: 86px;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.usp-icon img {
+  width: 86px;   
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* titel og tekst i cards */
+.usp-card-title {
+  font-size: 16px;
+  font-weight: var(--extrabold);
+  margin: 6px 0 8px;
+  color: var(--almost-black);
+}
+
+.usp-card-text {
+  font-size: 14px;
+  font-weight: var(--regular);
+  color: var(--almost-black);
+  line-height: 1.5;
+  margin: 0;
+}
