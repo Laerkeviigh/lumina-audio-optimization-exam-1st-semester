@@ -1,35 +1,4 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-}
-
-:root {
-    /* Farver fra mit stylesheet */
-    --clr-background: #F9F6F5;  /* Lysegrå/Hvid (baggrund) */
-    --clr-light-grey: #DCD2C9; /* Mellemgrå */
-    --clr-medium-grey: #C9BCB5; /* Mørkere mellemgrå */
-    --clr-pink: #F9D8D8;        /* Den lyserøde kontrastfarve */
-    --clr-dark: #272320;        /* Sort/Mørk tekstfarve */
-
-    /* Skrifttype */
-    --font-primary: "Kedebideri", sans-serif;
-
-    /* Spacing */
-    --spacing-default: 1.5rem;
-    --spacing-large: 4rem;
-}
-
-body {
-    font-family: var(--font-primary);
-    color: var(--clr-dark);
-    background-color: var(--clr-background); /* Lys baggrund til hele siden */
-    line-height: 1.6;
-}
-
-
-
 .hero {
   position: relative;
   min-height: calc(100vh - var(--header-h));
