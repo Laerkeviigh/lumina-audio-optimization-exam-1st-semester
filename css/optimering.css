@@ -108,7 +108,9 @@ body {
 }
 
 
-/* Hero Section */
+
+
+/* HERO SECTION */
 
 .hero {
     width: 100%;
@@ -167,11 +169,12 @@ body {
     background-color: var(--milky-white);
     color: var(--almost-black);
     text-decoration: none;
-    padding: 15px 30px;
+    padding: 15px 40px;
     border-radius: 30px;
     font-weight: var(--semibold);
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     transition: background-color 0.3s ease;
+    margin-right: 15px;
 }
 
 .btn-secondary {
@@ -179,7 +182,7 @@ body {
     background-color: transparent;
     color: var(--almost-black);
     text-decoration: none;
-    padding: 15px 30px;
+    padding: 15px 40px;
     border-radius: 30px;
     font-weight: var(--semibold);
     border: 2px solid var(--milky-white);
@@ -252,7 +255,6 @@ body {
   font-weight: var(--medium); 
   line-height: 1;
   color: var(--almost-black);
-  padding-top: 28px
   margin-right: 4px;
 }
 
@@ -265,3 +267,14 @@ body {
   padding-top: 6px;
   width: 190px; 
 }
+
+
+
+/* USP SECTION */
+
+
+
+
+
+
+
