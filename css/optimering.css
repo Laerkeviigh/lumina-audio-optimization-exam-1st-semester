@@ -497,7 +497,93 @@ body {
 
 
 
+.app-showcase {
+  position: relative;
+  padding: 120px 0 140px;
+  overflow: visible;
+  background: transparent;
+}
 
+/* Dekorative baggrundscirkler fra Figma */
+.showcase-bg-elements {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1800px;
+  max-width: 100%;
+  z-index: 1;         
+}
+
+/* Indre layout */
+.showcase-inner {
+  position: relative;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 1fr 520px; /* tekst | billede */
+  gap: 60px;
+  align-items: center;
+  max-width: 1300px;
+  top: 100px;
+  box-sizing: border-box;
+}
+
+/* Tekst felt */
+.showcase-text {
+  max-width: 620px;
+}
+
+/* Farverne til span */
+.title-black {
+  color: var(--almost-black);
+}
+
+.title-beige {
+  color: var(--beige);
+}
+
+/* Overskrift */
+.showcase-title {
+  font-size: 64px;
+  line-height: 0.9;
+  font-weight: var(--medium);
+  margin: 0 0 30px;
+}
+
+/* Undertekst */
+.showcase-sub {
+  font-size: 16px;
+  font-weight: var(--regular);
+  line-height: 1.6;
+  color: var(--almost-black);
+  margin-bottom: 32px;
+}
+
+/* CTA knap */
+.showcase-btn {
+  display: inline-block;
+  padding: 14px 34px;
+  background: var(--almost-black);
+  color: var(--milky-white);
+  border-radius: 28px;
+  text-decoration: none;
+  font-weight: var(--semibold);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+/* Billede af telefon */
+.showcase-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.showcase-phone {
+  width: 80%;
+  max-width: 520px;
+  border-radius: 30px;
+  object-fit: cover;
+}
 
 
 
