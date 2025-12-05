@@ -1009,7 +1009,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 12px 28px rgba(0,0,0,0.06);
   box-sizing: border-box;
 }
 
@@ -1039,4 +1038,209 @@ body {
   font-weight: var(--semibold);
   font-size: 17px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+
+
+/* FOOTER */
+
+
+
+/* Grundlayout for footer */
+.site-footer {
+  background: var(--milky-white);
+  color: var(--almost-black);
+  padding-top: 60px;
+  padding-bottom: 50px;
+  font-family: var(--font-main);
+  box-sizing: border-box;
+}
+
+
+/* Nyhedsbrev */
+.footer-newsletter {
+  text-align: center;
+  margin: 0 auto 44px;
+  max-width: 100%;
+  padding: 0;
+}
+
+/* Titel + undertekst */
+.newsletter-title {
+  font-size: 34px;
+  font-weight: var(--extrabold);
+  margin: 0 0 8px;
+  color: var(--almost-black);
+}
+
+.newsletter-sub {
+  margin: 0 0 20px;
+  font-size: 16px;
+  font-weight: var(--regular);
+  color: var(--almost-black);
+}
+
+/* Formular: input + knap */
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Runde input */
+.newsletter-form input[type="email"],
+.newsletter-form input {
+  padding: 14px 22px;
+  border-radius: 999px;
+  border: 2px solid rgba(0,0,0,0.06);
+  min-width: 360px;    /* større input så layout føles luftigt */
+  max-width: 420px;
+  background: transparent;
+  font-family: var(--font-main);
+  font-size: 15px;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Tilmeld-knap */
+.newsletter-btn {
+  padding: 12px 32px;
+  border-radius: 999px;
+  background: var(--almost-black);
+  color: var(--milky-white);
+  border: none;
+  cursor: pointer;
+  font-weight: var(--semibold);
+  font-size: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+/* 4 øverste kolonner / features */
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 36px;                /* større gap = mere luft mellem features */
+  align-items: start;
+  margin: 70px auto;
+  padding: 0 48px;
+  box-sizing: border-box;
+  max-width: 1400px;
+}
+
+.footer-feature h4 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: var(--extrabold);
+  color: var(--almost-black);
+}
+
+.footer-feature p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--almost-black);
+}
+
+/* Nederste 4 kolonner */
+.footer-bottom {
+  max-width: 1400px;
+  margin: 48px auto;
+  padding: 0 48px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48px;
+  text-align: left;
+}
+
+/* kolonne-overskrifter */
+.footer-columns h4 {
+  margin-bottom: 12px;
+  font-size: 15px;
+  font-weight: var(--extrabold);
+  color: var(--almost-black);
+}
+
+.footer-columns ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-columns li {
+  margin-bottom: 10px;
+}
+
+.footer-columns a {
+  color: var(--almost-black);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* kontakt-tekst i "LUMINA Audio"-kolonnen */
+.footer-columns p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--almost-black);
+}
+
+/* wrapper for socials og copyright */
+.footer-socials-wrap {
+  max-width: 1400px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* socials */
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin-bottom: 12px;
+}
+
+.social-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+}
+
+.social-btn img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* copyright */
+.footer-copy {
+  margin: 0;
+  color: var(--almost-black);
+  opacity: 0.6;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 6px;
+}
+
+/* Back to top knap */
+.back-to-top {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  text-decoration: none;
+}
+
+.back-to-top img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
