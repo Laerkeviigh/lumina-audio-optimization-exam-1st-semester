@@ -790,7 +790,8 @@ body {
   width: 100%;
   max-width: 1700px;
   height: 800px;          
-  border-radius: 40px;        
+  border-radius: 40px;
+  overflow: hidden;       
   z-index: 1;
 }
 
@@ -872,5 +873,118 @@ body {
   text-decoration: none;
   margin-top: 20px;
   box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
+
+
+
+/* FAQ SECTION */
+
+
+
+.faq-section {
+  padding: 100px 0 140px;
+  background: transparent;
+}
+
+/* container / boks */
+.faq-box-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(233,228,223,0.98); 
+  border-radius: 28px;
+  padding: 64px 56px;
+  box-shadow: 0 14px 36px rgba(0,0,0,0.06);
+  box-sizing: border-box;
+}
+
+/* ----- header ----- */
+.faq-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.faq-kicker {
+  margin: 0 0 8px;
+  color: var(--almost-black);
+  font-weight: var(--regular);
+  font-size: 16px;
+}
+
+.faq-title {
+  margin: 0;
+  font-size: 48px;
+  line-height: 1;
+  font-weight: var(--medium);
+  color: var(--almost-black);
+}
+
+/* liste med alle Q&A */
+.faq-list { 
+    margin-top: 30px; 
+}
+
+/* hvert stykke indhold (Q&A samlet) */
+.faq-item {
+  padding: 8px 0 18px;
+  border-top: none;
+}
+
+
+/* summary (spørgsmål man kan klikke på) */
+.faq-q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: var(--regular);
+  color: var(--almost-black);
+  padding-bottom: 14px;                
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  user-select: none;
+  outline: none;
+  gap: 12px;
+}
+
+/* Fjern default marker i browser */
+.faq-q::-webkit-details-marker { 
+    display: none; 
+}
+
+/* Chevron (pil) vha. pseudo-element */
+.faq-q::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid rgba(0,0,0,0.6);
+  border-bottom: 2px solid rgba(0,0,0,0.6);
+  transform: rotate(45deg);
+  transition: transform .22s ease;
+  margin-left: 12px;
+}
+
+/* Roter chevron når details er åbent */
+.faq-item[open] > .faq-q::after {
+  transform: rotate(-135deg);
+}
+
+/* Svar-området */
+.faq-a {
+  margin-top: 12px;
+  color: var(--almost-black);
+  font-size: 16px;
+  line-height: 1.7;
+  padding-top: 8px;
+}
+
+/* Når details er åbent vises svaret */
+.faq-item[open] .faq-a {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* paragraf indeni svar */
+.faq-a p { 
+    margin: 0; 
 }
 
