@@ -8,7 +8,7 @@
     --pink-light: #F9D8D8;
     --almost-black: #272320;
 
-    /* Skrifttyper */
+    /* Skrifttype */
     --font-main: "Kedebideri", sans-serif;
 
     /* Font weights */
@@ -57,7 +57,6 @@ body {
     justify-content: space-between;
     align-items: center;
     position: relative;
-
     background: var(--milky-white); 
     padding: 15px 25px;
     border-radius: 35px;
@@ -72,7 +71,7 @@ body {
 
 .nav-left a {
     text-decoration: none;
-    color: var(--black);
+    color: var(--almost-black);
     font-weight: var(--medium);
 }
 
@@ -92,10 +91,10 @@ body {
 .search-box {
     display: flex;
     align-items: center;
-    background: var(--white);
+    background: var(--milky-white);
     border-radius: 50px;
     padding: 6px 15px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
 }
 
 .search-box input {
@@ -128,7 +127,6 @@ body {
     left: 0;
     width: 100%;
     height: auto;
-    display: block;
     z-index: 1;
 }
 
@@ -159,7 +157,7 @@ body {
 .hero-content {
     max-width: 600px;
     line-height: 30px;
-    z-index: 15; /* så tekst altid ligger OVER overlays */
+    z-index: 15; 
 }
 
 .hero-text {
@@ -177,7 +175,6 @@ body {
     border-radius: 30px;
     font-weight: var(--semibold);
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: background-color 0.3s ease;
     margin-right: 15px;
 }
 
@@ -191,7 +188,6 @@ body {
     font-weight: var(--semibold);
     border: 2px solid var(--milky-white);
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Hero stats layout */
@@ -235,7 +231,7 @@ body {
 /* Tekst - to stats side-by-side, højre for cirklerne */
 .stats-wrap {
   display: flex;
-  gap: 10px;                  /* afstand mellem de to statistikker */
+  gap: 10px;                  
   align-items: flex-start;
   justify-content: flex-start;  
   flex-wrap: nowrap;
@@ -344,8 +340,6 @@ body {
 .usp-icon img {
   width: 86px;   
   height: auto;
-  display: block;
-  object-fit: contain;
 }
 
 /* titel og tekst i cards */
@@ -392,7 +386,6 @@ body {
   position: relative;
   z-index: 3;
   margin-top: -950px;   /*  denne værdi gør så indholdet ligger inden i "overlay boksen" */
-  display: block;
 }
 
 /* Header inde i "overlay boksen" */
@@ -436,18 +429,13 @@ body {
 /* Kort layout */
 .product-card {
   position: relative;
-  text-align: center;
-  display: block;
   overflow: visible;
 }
 
 /* Kort "baggrund" som er selve cardet lavet i Figma */
 .card-bg {
-  display: block;
   width: 100%;
   height: auto;
-  border-radius: 18px;
-  pointer-events: none;
 }
 
 /* produktbilledet (selve højtaler svg'en) */
@@ -563,7 +551,6 @@ body {
 
 /* CTA knap */
 .showcase-btn {
-  display: inline-block;
   padding: 14px 34px;
   background: var(--almost-black);
   color: var(--milky-white);
@@ -584,7 +571,6 @@ body {
   width: 80%;
   max-width: 520px;
   border-radius: 30px;
-  object-fit: cover;
 }
 
 
@@ -637,7 +623,6 @@ body {
   list-style: none;
   margin: 28px 0 0;
   padding: 0;
-  display: block;
 }
 
 .storycase-list li {
@@ -667,9 +652,7 @@ body {
   max-width: 520px;
   height: auto;
   border-radius: 30px;                
-  object-fit: cover;
   box-shadow: 0 18px 40px rgba(0,0,0,0.12);
-  display: block;
 }
 
 /* Divider-linje */
@@ -679,7 +662,6 @@ body {
   background: var(--pink-light);
   margin: 100px auto;
   border-radius: 4px;
-  opacity: 0.9;
 ;
 }
 
@@ -730,13 +712,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0px;
 }
 
 .trust-badge-img {
   width: 140px;
   height: auto;
-  display: block;
 }
 
 .trustpilot-rating {
@@ -754,8 +734,6 @@ body {
 }
 
 .review-card {
-  background: transparent;
-  border-radius: 18px;
   padding: 8px;
   display: flex;
   justify-content: center;
@@ -764,8 +742,6 @@ body {
 
 .review-card img {
   width: 100%;
-  display: block;
-  border-radius: 18px;
 }
 
 
@@ -777,8 +753,6 @@ body {
 .about-section {
   position: relative;
   padding: 140px 0; 
-  background: transparent;
-  overflow: visible;
 }
 
 /* wrapper der styrer højde + runde hjørner af baggrundsgrafik fra Figma */
@@ -802,7 +776,6 @@ body {
   height: 100%;
   object-fit: cover;       
   object-position: center top; 
-  display: block;
 }
 
 /* grid layout – billede venstre / tekstboks højre */
@@ -831,14 +804,12 @@ body {
 .about-img {
   width: 100%;
   max-width: 420px;
-  border-radius: 30px; /* ekstra sikkerhed */
-  display: block;
+  border-radius: 30px; 
 }
 
 /* tekstboks */
 .about-box {
   background: rgba(217, 209, 201, 0.40); /* var(--beige-light) med 40% opacity */
-  backdrop-filter: blur(4px);
   border-radius: 40px;
   padding: 50px 60px;
   box-shadow: 0 18px 36px rgba(0,0,0,0.10);
@@ -883,7 +854,6 @@ body {
 
 .faq-section {
   padding: 80px 0 80px;
-  background: transparent;
 }
 
 /* container / boks */
@@ -911,7 +881,6 @@ body {
 }
 
 .faq-title {
-  margin: 0;
   font-size: 48px;
   line-height: 1;
   font-weight: var(--medium);
@@ -1005,7 +974,6 @@ body {
   border-radius: 30px;
   padding: 50px 140px;  
   max-width: 1700px;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1017,7 +985,6 @@ body {
   font-size: 36px;
   font-weight: var(--medium);
   color: var(--almost-black);
-  margin: 0;
   line-height: 1.1;
 }
 
@@ -1062,7 +1029,6 @@ body {
   text-align: center;
   margin: 0 auto 44px;
   max-width: 100%;
-  padding: 0;
 }
 
 /* Titel + undertekst */
@@ -1093,25 +1059,22 @@ body {
 .newsletter-form input[type="email"],
 .newsletter-form input {
   padding: 14px 22px;
-  border-radius: 999px;
+  border-radius: 30px;
   border: 2px solid rgba(0,0,0,0.06);
-  min-width: 360px;    /* større input så layout føles luftigt */
+  min-width: 360px;    
   max-width: 420px;
   background: transparent;
   font-family: var(--font-main);
   font-size: 15px;
-  outline: none;
-  box-shadow: none;
 }
 
 /* Tilmeld-knap */
 .newsletter-btn {
   padding: 12px 32px;
-  border-radius: 999px;
+  border-radius: 40px;
   background: var(--almost-black);
   color: var(--milky-white);
   border: none;
-  cursor: pointer;
   font-weight: var(--semibold);
   font-size: 15px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.18);
@@ -1121,7 +1084,7 @@ body {
 .footer-top {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 36px;                /* større gap = mere luft mellem features */
+  gap: 36px;                
   align-items: start;
   margin: 70px auto;
   padding: 0 48px;
@@ -1137,7 +1100,6 @@ body {
 }
 
 .footer-feature p {
-  margin: 0;
   font-size: 15px;
   line-height: 1.6;
   color: var(--almost-black);
@@ -1165,8 +1127,6 @@ body {
 
 .footer-columns ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .footer-columns li {
@@ -1212,12 +1172,10 @@ body {
 .social-btn img {
   width: 100%;
   height: auto;
-  display: block;
 }
 
 /* copyright */
 .footer-copy {
-  margin: 0;
   color: var(--almost-black);
   opacity: 0.6;
   font-size: 13px;
@@ -1242,5 +1200,4 @@ body {
 .back-to-top img {
   width: 100%;
   height: auto;
-  display: block;
 }
