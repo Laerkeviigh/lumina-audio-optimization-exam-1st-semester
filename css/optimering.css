@@ -662,7 +662,6 @@ body {
   background: var(--pink-light);
   margin: 100px auto;
   border-radius: 4px;
-;
 }
 
 
@@ -1055,9 +1054,8 @@ body {
   flex-wrap: wrap;
 }
 
-/* Runde input */
-.newsletter-form input[type="email"],
-.newsletter-form input {
+/* Email input */
+.newsletter-form input[type="email"]{
   padding: 14px 22px;
   border-radius: 30px;
   border: 2px solid rgba(0,0,0,0.06);
