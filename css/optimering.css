@@ -56,6 +56,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
     background: var(--milky-white); 
     padding: 15px 25px;
@@ -77,6 +78,9 @@ body {
 
 .nav-logo {
     height: 22px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .nav-right {
@@ -106,7 +110,6 @@ body {
     width: 22px;
     cursor: pointer;
 }
-
 
 
 
@@ -141,7 +144,6 @@ body {
 }
 
 /* Tekst på hero section */
-
 .hero h1 {
     font-size: 64px;
     line-height: 0.9;
@@ -190,9 +192,7 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
 /* Hero stats layout */
-
 .hero-stats {
   display: flex;
   align-items: center;        
@@ -592,7 +592,7 @@ body {
 
 
 .storycase {
-  padding: 200px 0 140px;
+  padding: 200px 0 0px;
 }
 
 /* Indre grid: tekst | billede */
@@ -680,3 +680,89 @@ body {
   opacity: 0.9;
 ;
 }
+
+
+
+/* TRUSTPILOT SECTION */
+
+
+
+.trustpilot-section {
+  padding: 0px 0 120px;
+
+}
+
+.trustpilot-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* sektionsheader */
+.trustpilot-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.trustpilot-title {
+  font-size: 36px;
+  font-weight: var(--medium);
+  color: var(--almost-black);
+  margin-bottom: 12px;
+}
+
+.trustpilot-sub {
+  font-size: 16px;
+  font-weight: var(--regular);
+  color: var(--almost-black);
+  margin-bottom: 12px;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* Badge og rating */
+.trustpilot-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+}
+
+.trust-badge-img {
+  width: 140px;
+  height: auto;
+  display: block;
+}
+
+.trustpilot-rating {
+  font-size: 16px;
+  font-weight: var(--extrabold);
+  color: var(--almost-black);
+}
+
+/* Grid med cards (designet med indhold i Figma) */
+.trustpilot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.review-card {
+  background: transparent;
+  border-radius: 18px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.review-card img {
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+}
+
