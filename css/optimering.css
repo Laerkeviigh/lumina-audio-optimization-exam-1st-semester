@@ -26,6 +26,9 @@
     box-sizing: border-box;
 }
 
+/* Gør siden rar at scrolle */
+html { scroll-behavior: smooth; }
+
 /* Body */
 
 body {
@@ -126,7 +129,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 850px;
     z-index: 1;
 }
 
@@ -265,8 +268,6 @@ body {
   padding-top: 6px;
   width: 190px; 
 }
-
-
 
 /* USP SECTION */
 
@@ -1202,7 +1203,7 @@ body {
 
 
 
-/* RESPONSIVE */
+/* RESPONSIV */
 
 
 @media (max-width: 992px) {
@@ -1255,4 +1256,40 @@ body {
     padding: 0 20px;
     text-align: center;
   }
+}
+
+
+
+/* ANIMATION */
+
+
+
+/* Start-tilstand (usynlig + let skaleret) */
+main section,
+.hero {
+  opacity: 0;
+  transform: scale(0.97);
+  transition: opacity 560ms ease-out, transform 560ms ease-out;
+  will-change: opacity, transform;
+}
+
+/* Når sektionen får .show-animate -> fade ind + skaler til 1 */
+main section.show-animate,
+.hero.show-animate {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+/* Når parent sektion får .show-animate, så animér disse ind */
+main section.show-animate .usp-card,
+main section.show-animate .product-card,
+main section.show-animate .review-card,
+main section.show-animate .storycase-img,
+main section.show-animate .showcase-phone,
+main section.show-animate .about-image,
+main section.show-animate .about-box,
+main section.show-animate .cta-inner {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
