@@ -1203,63 +1203,6 @@ body {
 
 
 
-/* RESPONSIV */
-
-
-@media (max-width: 992px) {
-  .hero-inner {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .hero h1 {
-    font-size: 48px;
-  }
-
-  .hero-stats {
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  .usp-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .bestseller-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .app-showcase-inner {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .storycase-inner {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .faq-box-container {
-    padding: 40px 20px;
-  }
-
-  .footer-top {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-    padding: 0 20px;
-  }
-
-  .footer-bottom {
-    grid-template-columns: 1fr;
-    gap: 24px;
-    padding: 0 20px;
-    text-align: center;
-  }
-}
-
-
-
 /* ANIMATION */
 
 
@@ -1293,14 +1236,6 @@ main section.show-animate .cta-inner {
   opacity: 1;
   transform: translateY(0) scale(1);
 }
-
-
-
-
-
-
-
-
 
 
 
