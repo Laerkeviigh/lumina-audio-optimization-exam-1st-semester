@@ -1,9 +1,6 @@
 "use strict";
 
-/* -------------------------
-   Simple scroll observer
-   Bruger kun window.onscroll, offsetTop og classList
-   ------------------------- */
+/* Simpel scroll observer til animation via. CSS */
 
 const sections = document.querySelectorAll("main section, .hero");
 
