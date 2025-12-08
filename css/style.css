@@ -1291,6 +1291,7 @@ main section.show-animate .cta-inner {
 /* RESPONSIV */
 
 
+
 /* store tablets / lille desktop */
 @media (max-width: 1200px) {
   .hero h1 { font-size: 48px; }
