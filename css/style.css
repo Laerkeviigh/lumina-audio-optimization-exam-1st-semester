@@ -256,7 +256,7 @@ body {
   width: 280px;         
 }
 
-/* Tal */
+/* Tal i stat */
 .stat-number {
   font-size: 50px;
   font-weight: var(--medium); 
@@ -275,7 +275,10 @@ body {
   width: 190px; 
 }
 
+
+
 /* USP SECTION */
+
 
 
 .usp-section {
@@ -293,7 +296,7 @@ body {
   box-sizing: border-box;
 }
 
-/* Header - titel til venstre, kort tekst til højre */
+/* USP header - titel til venstre, kort tekst til højre */
 .usp-header {
   display: flex;
   justify-content: space-between;
@@ -349,7 +352,7 @@ body {
   height: auto;
 }
 
-/* titel og tekst i cards */
+/* Titel og tekst i cards */
 .usp-card-title {
   font-size: 16px;
   font-weight: var(--extrabold);
@@ -377,7 +380,7 @@ body {
   background: transparent;
 }
 
-/* overlay boks / grafisk baggrund fra Figma */
+/* Overlay boks / grafisk baggrund fra Figma */
 .bestseller-bg {
   display: block;
   margin: 0 auto;
@@ -388,11 +391,11 @@ body {
   z-index: 2;
 }
 
-/* indhold indsættes ovenpå overlay-billedet ved hjælp af negativ margin */
+/* Indhold indsættes ovenpå overlay-billedet ved hjælp af negativ margin */
 .bestseller-inner {
   position: relative;
   z-index: 3;
-  margin-top: -950px;   /*  denne værdi gør så indholdet ligger inden i "overlay boksen" */
+  margin-top: -950px;   
 }
 
 /* Header inde i "overlay boksen" */
@@ -445,7 +448,7 @@ body {
   height: auto;
 }
 
-/* produktbilledet (selve højtaler svg'en) */
+/* Produktbilledet (selve højtaler svg'en) */
 .moonlight-white-img {
   position: absolute;
   top: -10px;               
@@ -642,7 +645,7 @@ body {
   font-weight: var(--regular); 
 }
 
-/* kun det første ord */
+/* Kun det første ord */
 .storycase-list strong {
   font-weight: var(--semibold);
   margin-right: 2px;
@@ -691,7 +694,7 @@ body {
   box-sizing: border-box;
 }
 
-/* sektionsheader */
+/* Sektionsheader */
 .trustpilot-header {
   text-align: center;
   margin-bottom: 48px;
@@ -763,7 +766,7 @@ body {
   padding: 140px 0; 
 }
 
-/* wrapper der styrer højde + runde hjørner af baggrundsgrafik fra Figma */
+/* Wrapper der styrer højde + runde hjørner af baggrundsgrafik fra Figma */
 .about-bg-wrapper {
   position: absolute;
   top: 0;
@@ -778,7 +781,7 @@ body {
 }
 
 
-/* selve baggrundsgrafikken fra Figma */
+/* Selve baggrundsgrafikken fra Figma */
 .about-bg {
   width: 100%;
   height: 100%;
@@ -786,7 +789,7 @@ body {
   object-position: center top; 
 }
 
-/* grid layout – billede venstre / tekstboks højre */
+/* Grid layout – billede venstre / tekstboks højre */
 .about-inner {
   position: relative;
   z-index: 5;
@@ -800,7 +803,7 @@ body {
   align-items: center;
 }
 
-/* billede til venstre */
+/* Billede til venstre */
 .about-image {
   display: flex;
   justify-content: center;
@@ -815,7 +818,7 @@ body {
   border-radius: 30px; 
 }
 
-/* tekstboks */
+/* Tekstboks */
 .about-box {
   background: rgba(217, 209, 201, 0.40); /* var(--beige-light) med 40% opacity */
   border-radius: 40px;
@@ -824,7 +827,7 @@ body {
   text-align: center;
 }
 
-/* titel */
+/* Titel */
 .about-title {
   font-size: 40px;
   font-weight: var(--medium);
@@ -832,7 +835,7 @@ body {
   color: var(--almost-black);
 }
 
-/* tekst */
+/* Tekst */
 .about-text {
   font-size: 16px;
   font-weight: var(--regular);
@@ -864,7 +867,7 @@ body {
   padding: 80px 0 80px;
 }
 
-/* container / boks */
+/* Container / boks */
 .faq-box-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -875,7 +878,7 @@ body {
   box-sizing: border-box;
 }
 
-/* ----- header ----- */
+/* Sektionsheader */
 .faq-header {
   text-align: center;
   margin-bottom: 40px;
@@ -895,19 +898,19 @@ body {
   color: var(--almost-black);
 }
 
-/* liste med alle Q&A */
+/* Liste med alle Q&A */
 .faq-list { 
     margin-top: 30px; 
 }
 
-/* hvert stykke indhold (Q&A samlet) */
+/* Hvert stykke indhold (Q&A samlet) */
 .faq-item {
   padding: 8px 0 18px;
   border-top: none;
 }
 
 
-/* summary (spørgsmål man kan klikke på) */
+/* Summary (spørgsmål man kan klikke på) */
 .faq-q {
   display: flex;
   justify-content: space-between;
@@ -960,14 +963,14 @@ body {
   transform: translateY(0);
 }
 
-/* paragraf indeni svar */
+/* Paragraf indeni svar */
 .faq-a p { 
     margin: 0; 
 }
 
 
 
-/* CTA SECTION*/
+/* CTA SECTION */
 
 
 
@@ -1075,7 +1078,7 @@ body {
   font-size: 15px;
 }
 
-/* Tilmeld-knap */
+/* Tilmeld knap */
 .newsletter-btn {
   padding: 12px 32px;
   border-radius: 40px;
@@ -1124,7 +1127,7 @@ body {
   text-align: left;
 }
 
-/* kolonne-overskrifter */
+/* Kolonne overskrifter */
 .footer-columns h4 {
   margin-bottom: 12px;
   font-size: 15px;
@@ -1146,21 +1149,21 @@ body {
   font-size: 14px;
 }
 
-/* kontakt-tekst i "LUMINA Audio"-kolonnen */
+/* Kontakt tekst i "LUMINA Audio"-kolonnen */
 .footer-columns p {
   font-size: 14px;
   line-height: 1.6;
   color: var(--almost-black);
 }
 
-/* wrapper for socials og copyright */
+/* Wrapper for socials og copyright */
 .footer-socials-wrap {
   max-width: 1400px;
   text-align: center;
   box-sizing: border-box;
 }
 
-/* socials */
+/* Socials */
 .footer-socials {
   display: flex;
   justify-content: center;
@@ -1181,7 +1184,7 @@ body {
   height: auto;
 }
 
-/* copyright */
+/* Copyright */
 .footer-copy {
   color: var(--almost-black);
   opacity: 0.6;
@@ -1243,6 +1246,44 @@ main section.show-animate .about-box,
 main section.show-animate .cta-inner {
   opacity: 1;
   transform: translateY(0) scale(1);
+}
+
+
+/* Knap hovers - base for alle knapper */
+.btn-primary,
+.btn-secondary,
+.bestseller-cta-btn,
+.showcase-btn,
+.cta-btn,
+.about-btn,
+.newsletter-btn {
+  transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease, color .25s ease;
+  display: inline-block;
+}
+
+/* Hover-styling */
+.btn-primary:hover,
+.btn-secondary:hover,
+.bestseller-cta-btn:hover,
+.showcase-btn:hover,
+.cta-btn:hover,
+.about-btn:hover,
+.newsletter-btn:hover {
+    transform: scale(1.04);
+    background-color: var(--milky-white);
+    color: var(--almost-black);
+    box-shadow: 0 8px 24px var(--shadow-dark);
+}
+
+/* Specifikke hovers */
+.btn-primary:hover {
+    background-color: var(--almost-black);
+    color: var(--milky-white);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(39, 35, 32, 0.06);
+    border-color: var(--almost-black);
 }
 
 

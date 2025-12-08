@@ -4,7 +4,7 @@
 
 const sections = document.querySelectorAll("main section, .hero");
 
-// Simple scroll-logic 
+// Simple scroll 
 window.onscroll = () => {
   const trigger = window.scrollY + window.innerHeight * 0.8; // trigpunkt lidt før elementet er midt i view
 
