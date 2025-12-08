@@ -8,6 +8,10 @@
     --pink-light: #F9D8D8;
     --almost-black: #272320;
 
+    /* Skygger */
+    --shadow-light: rgba(0, 0, 0, 0.06);
+    --shadow-dark: rgba(0, 0, 0, 0.18);
+
     /* Skrifttype */
     --font-main: "Kedebideri", sans-serif;
 
@@ -63,7 +67,7 @@ body {
     background: var(--milky-white); 
     padding: 15px 25px;
     border-radius: 35px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 10px var(--shadow-light);
 }
 
 .nav-left {
@@ -97,7 +101,7 @@ body {
     background: var(--milky-white);
     border-radius: 50px;
     padding: 6px 15px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    box-shadow: 0 2px 6px var(--shadow-dark);
 }
 
 .search-box input {
@@ -177,7 +181,7 @@ body {
     padding: 15px 40px;
     border-radius: 30px;
     font-weight: var(--semibold);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px var(--shadow-light);
     margin-right: 15px;
 }
 
@@ -190,7 +194,7 @@ body {
     border-radius: 30px;
     font-weight: var(--semibold);
     border: 2px solid var(--milky-white);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px var(--shadow-light);
 }
 
 /* Hero stats layout */
@@ -223,7 +227,7 @@ body {
   height: 80px;
   object-fit: contain;
   z-index: 10;
-  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.06));
+  filter: drop-shadow(0 6px 12px var(--shadow-light));
 }
 
 
@@ -478,7 +482,7 @@ body {
   background: var(--almost-black);
   color: var(--milky-white);
   text-decoration: none;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px var(--shadow-dark);
   font-weight: var(--semibold);
 }
 
@@ -493,6 +497,7 @@ body {
   padding: 160px 0 170px;
   overflow: visible;
   background: transparent;
+  z-index: 2;
 }
 
 /* Dekorative baggrundscirkler fra Figma */
@@ -558,7 +563,7 @@ body {
   border-radius: 28px;
   text-decoration: none;
   font-weight: var(--semibold);
-  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+  box-shadow: 0 10px 24px var(--shadow-dark);
 }
 
 /* Billede af telefon */
@@ -653,7 +658,7 @@ body {
   max-width: 520px;
   height: auto;
   border-radius: 30px;                
-  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+  box-shadow: 0 18px 40px var(--shadow-dark);
 }
 
 /* Divider-linje */
@@ -798,7 +803,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 30px;
-  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 18px 36px var(--shadow-dark);
 }
 
 .about-img {
@@ -812,7 +817,7 @@ body {
   background: rgba(217, 209, 201, 0.40); /* var(--beige-light) med 40% opacity */
   border-radius: 40px;
   padding: 50px 60px;
-  box-shadow: 0 18px 36px rgba(0,0,0,0.10);
+  box-shadow: 0 18px 36px var(--shadow-dark);
   text-align: center;
 }
 
@@ -843,7 +848,7 @@ body {
   border-radius: 28px;
   text-decoration: none;
   margin-top: 20px;
-  box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 24px var(--shadow-dark);
 }
 
 
@@ -863,7 +868,7 @@ body {
   background: rgba(233,228,223,0.98); 
   border-radius: 28px;
   padding: 64px 56px;
-  box-shadow: 0 14px 36px rgba(0,0,0,0.06);
+  box-shadow: 0 14px 36px var(--shadow-light);
   box-sizing: border-box;
 }
 
@@ -909,7 +914,7 @@ body {
   font-weight: var(--regular);
   color: var(--almost-black);
   padding-bottom: 14px;                
-  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-bottom: 1px solid var(--shadow-light);
   user-select: none;
   outline: none;
   gap: 12px;
@@ -925,8 +930,8 @@ body {
   content: "";
   width: 12px;
   height: 12px;
-  border-right: 2px solid rgba(0,0,0,0.6);
-  border-bottom: 2px solid rgba(0,0,0,0.6);
+  border-right: 2px solid var(--shadow-light);
+  border-bottom: 2px solid var(--shadow-light);
   transform: rotate(45deg);
   transition: transform .22s ease;
   margin-left: 12px;
@@ -1004,7 +1009,7 @@ body {
   text-decoration: none;
   font-weight: var(--semibold);
   font-size: 17px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+  box-shadow: 0 8px 20px var(--shadow-dark);
 }
 
 
@@ -1059,7 +1064,7 @@ body {
 .newsletter-form input[type="email"]{
   padding: 14px 22px;
   border-radius: 30px;
-  border: 2px solid rgba(0,0,0,0.06);
+  border: 2px solid var(--shadow-light);
   min-width: 360px;    
   max-width: 420px;
   background: transparent;
@@ -1076,7 +1081,7 @@ body {
   border: none;
   font-weight: var(--semibold);
   font-size: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+  box-shadow: 0 8px 20px var(--shadow-dark);
 }
 
 /* 4 øverste kolonner / features */
