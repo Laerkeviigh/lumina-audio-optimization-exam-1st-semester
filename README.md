@@ -37,8 +37,8 @@ Fokus ligger både på struktur, semantik, visuel konsistens og ny funktionalite
   - font-variabler  
   - font-weights  
 - Standardfonten fra den gamle version er erstattet med en defineret projektfont.
-- Grafiske elementer fra Figma - herunder baggrunde og card-elementer er nu indarbejdet direkte i layoutet.
-- Knapper har fået nye subtile hover-effekter baseret på et gennemført farve- og skyggehierarki.
+- Grafiske elementer fra Figma, herunder baggrunde og card-elementer er nu indarbejdet direkte i layoutet.
+- Knapper og cards har fået nye subtile hover-effekter baseret på et gennemført farve- og skyggehierarki.
 - Layoutet er generelt blevet mere responsivt og skalerbart.
 
 ## **JavaScript**
