@@ -441,6 +441,7 @@ body {
   overflow: visible;
 }
 
+
 /* Kort "baggrund" som er selve cardet lavet i Figma */
 .card-bg {
   width: 100%;
@@ -1247,6 +1248,11 @@ main section.show-animate .cta-inner {
   transform: translateY(0) scale(1);
 }
 
+/* Hover for navbarens kategorier */
+.nav-left a:hover {
+  color: var(--beige);
+
+}
 
 /* Knap hovers - base for alle knapper */
 .btn-primary,
@@ -1268,7 +1274,7 @@ main section.show-animate .cta-inner {
 .cta-btn:hover,
 .about-btn:hover,
 .newsletter-btn:hover {
-    transform: scale(1.04);
+    transform: scale(1.03);
     background-color: var(--milky-white);
     color: var(--almost-black);
     box-shadow: 0 8px 24px var(--shadow-dark);
@@ -1283,6 +1289,31 @@ main section.show-animate .cta-inner {
 .btn-secondary:hover {
     background-color: rgba(39, 35, 32, 0.06);
     border-color: var(--almost-black);
+}
+
+
+/* Produktkort hover effekt */
+.product-card:hover .card-bg {
+  transform: scale(1.02);
+  transition: transform 0.4s ease;
+}
+
+/* Trustpilot review kort hover effekt */
+.review-card img:hover {
+  transform: scale(1.02);
+  transition: transform 0.4s ease;
+}
+
+/* Social media knapper hover effekt */
+.social-btn img:hover {
+  transform: scale(1.03);
+  transition: transform 0.4s ease;
+}
+
+/* Back to top knap hover effekt */
+.back-to-top img:hover {
+  transform: scale(1.03);
+  transition: transform 0.4s ease;
 }
 
 
